@@ -12,12 +12,22 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        var label = UILabel()
+        label.frame = CGRectMake(150, 150, 60, 60)
+        label.text = "0"
+        
+        self.view.addSubview(label)
+        
+        
+        var button = UIButton()
+        button.frame = CGRectMake(150, 250, 80, 80)
+        button.setTitle("Click", forState: .Normal)
+        button.setTitleColor(UIColor.blueColor(), forState: .Normal)
+        
+        self.view.addSubview(button)
+        
+        
     }
 
 
